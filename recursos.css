@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f3f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #8e44ad, #732d91);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Navegação */
+nav {
+  background: #5e2b88;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #dcd0f2;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Seções */
+section {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+section h2 {
+  color: #5e2b88;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Rodapé */
+footer {
+  background: #8e44ad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  margin-top: 50px;
+}
+
+/* Links padrão */
+a {
+  color: #5e2b88;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #a678d9;
+  text-decoration: underline;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
+
+

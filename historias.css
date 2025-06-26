@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Nunito Sans', 'Rubik', sans-serif;
+  background: #f4f3f8;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #8e44ad, #732d91);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+/* Navegação */
+nav {
+  background: #5e2b88;
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd6ff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Conteúdo Principal */
+main {
+  padding: 30px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Card de História */
+.story {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.story img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.story h3 {
+  margin-top: 0;
+  color: #5e2b88;
+  font-size: 1.6em;
+}
+
+.story p {
+  font-size: 1.05em;
+  color: #444;
+}
+
+/* Botão */
+.botao-link {
+  display: inline-block;
+  background: #8e44ad;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.botao-link:hover {
+  background: #732d91;
+  transform: translateY(-2px);
+}
+
+/* Rodapé */
+footer {
+  background: #8e44ad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.95em;
+  border-top: 3px solid #732d91;
+}
+

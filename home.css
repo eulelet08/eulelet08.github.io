@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  background: #f4f3f8;
+  color: #333;
+  font-family: 'Nunito Sans', 'Rubik', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #8e44ad, #732d91);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #5e2b88;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* Navegação */
+nav {
+  background: #5e2b88;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: white;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdaff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Seções */
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #5e2b88;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-left: 5px solid #8e44ad;
+  padding-left: 10px;
+}
+
+/* Parágrafos e listas */
+p, li {
+  font-size: 1em;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  background: #8e44ad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.9em;
+  border-top: 3px solid #732d91;
+}
+
